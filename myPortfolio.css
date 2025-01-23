@@ -1,0 +1,85 @@
+body{
+    background-color: #ece7e1;
+}
+
+.diva{
+   position: relative;
+   text-align: left;
+   left: 10%;
+}
+.divb{
+    
+    position: absolute;
+    left: 1060px;
+    top: 40px;
+
+}
+#pa{
+    font-size: 7.98vw;
+    font-family: "Grandslang roman", sans-serif;
+    
+    
+}
+#p1{
+    font-size: 2.7vw;
+    font-family: cursive;
+    
+}
+.divb img{
+    max-width: 430px;  
+    max-height: 550px;
+    margin: 27.7188px -55.4375px 0px 0px;
+    
+}
+.diva p{
+    font-size: 1.1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.8;
+}
+#quote{
+    font-size: 2.7vw;
+    font-family: cursive;
+}
+#reducefont{
+    font-size: 1.6vw;
+    font-family: cursive;
+}
+p a{
+    font-size: 1.2vw;
+    font-family: cursive;
+    border-radius: 40px;
+    background-color: #1a1818;
+    color: #ece7e1;
+    padding: 20px 60px;
+    text-decoration: none;
+
+}
+p a:hover{
+    padding: 20px 100px;
+
+}
+span a{
+    display: inline-block; 
+    transform: rotate(270deg); 
+    letter-spacing: 4px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1a1818;
+    text-decoration: none;
+}
+span a:hover{
+    text-decoration: line-through;
+}
+
+nav-left{
+    position: relative; 
+    top: 100px;
+}
+@media screen and (max-width: 900px) {
+    .divb{float: left; width: 100%;}
+    .diva{float: left; width: 100%;}
+    
+    
+  }
+  div p #reducefont2{
+    box-shadow: 10px 20px gray;
+  }
