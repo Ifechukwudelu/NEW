@@ -1,0 +1,122 @@
+body{
+    box-sizing: border-box;
+    
+}
+
+.mainab{
+    background-color: rgba(247,238,232);
+    position: relative;
+    height: 1600px;
+}
+
+#ulp{
+    color: #12908E;
+    font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    padding-left: 42px;
+    margin-top: 18px;
+    text-shadow: 2px 2px 30px lightgray, 0 0 5px #444446;
+
+}
+ul a{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222222;
+    text-decoration: none;
+    padding-right: 65px;
+    
+}
+nav span{
+    
+    margin-left: 600px;
+}
+
+nav{
+    position: fixed;
+    background-color: #eedbce;
+    top: 0px;
+    width: 100%;
+
+}
+.serve{
+    font-size: 48px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 100px;
+    padding-left: 720px;
+    color: #000000;
+    text-shadow:  3px 3px 0 lightgray;
+}
+.bb{
+    
+    border-bottom: 4px solid #12908E;
+    margin-top: -40px;
+    width: 120px;
+    margin-left: 755px;
+    margin-bottom: 50px;
+}
+.pm{
+    width: 100%;
+    margin-left: 120px;
+}
+.midiv{
+    
+    float: left;
+    border: 1px solid #ffffff;
+    width: 27%;
+    color: #222222;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: left;
+    margin-right: 33px;
+    
+}
+.ppl{
+    padding-left: 20px;
+}
+
+.web{
+    font-size: 19.2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #000000;
+    text-align: center;
+
+}
+
+.midiv:hover{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.sm{
+    margin-top: 90px;
+}
+
+footer{
+    background-color: rgb(34, 34, 34);
+    max-width: 98.5%;
+    height: 200px;
+    margin-top: 1240px;
+    text-align: center;
+}
+footer p{
+    color: #f7f7f7;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fid{
+    margin-top: 40px;
+
+}
+.fid a{
+    color: #f7f7f7;
+}
