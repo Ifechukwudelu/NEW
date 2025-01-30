@@ -12,14 +12,14 @@ body{
 .cv1{
     float: left;
     position: relative;
-    left: 180px;
+    left: 120px;
     
 }
 .cv2{
     float: right;
     position: relative;
     top: 80px;
-    
+    left: -120px;
     
 }
 h1{

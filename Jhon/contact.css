@@ -100,11 +100,11 @@ footer{
 }
 footer p{
     color: #f7f7f7;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .fid{
-    margin-top: 40px;
+    margin-top: -40px;
 
 }
 .fid a{
