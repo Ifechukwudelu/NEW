@@ -11,7 +11,6 @@ body{
 }
 .intro{
     max-width: 100%;
-    margin: 10px;
     text-align: center;
     height: 740px;
     background-color: rgb(247, 238, 232);
@@ -25,26 +24,64 @@ body{
     font-weight: 600;
     padding-left: 42px;
     margin-top: 18px;
-    text-shadow: 2px 2px 30px lightgray, 0 0 5px #444446;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.19), 0 0 5px rgba(0, 0, 0, 0.19);
 
 }
 ul a{
     font-size: 17px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #222222;
-    
     text-decoration: none;
     padding-right: 65px;
     
 }
 nav span{
-    
-    margin-left: 600px;
+    margin-left: 220px;
 }
+.bars{
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+}
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: -70px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    margin-left: -50px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
 
 nav{
     position: fixed;
-    background-color: #ffffff;
+    background-color: rgb(247, 238, 232);
     top: 0px;
     width: 100%;
 
@@ -60,7 +97,7 @@ nav{
 #freelance{
     color: #555555;
     font-size: 20.8px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: -340px;
     margin-top: 270px;
 }
@@ -76,17 +113,21 @@ button{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-color: #c4421a;
     box-shadow: 5px 5px 5px grey;
+    transition: background-color box-shadow;
+    transition-duration: 1s;
     
 }
 button a{
     color: #f7f7f7;
     text-decoration: none;
+    
 }
 
 button:hover{
     background-color: #ac2f09;
     border-color: #ac2f09;
     box-shadow: 5px 5px 5px lightgrey;
+
 }
 .intro img{
     margin-left: 400px;
@@ -98,7 +139,7 @@ button:hover{
 }
 #hr{
     padding-top: 570px; 
-    margin-left: -460px;
+    margin-left: -400px;
 }
 
 .services{
@@ -113,37 +154,40 @@ button:hover{
 .serve{
     font-size: 48px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 50px 640px 30px;
     color: #000000;
     text-shadow:  3px 3px 0 lightgray;
+    text-align: center;
+}
+#midd2{
+    margin-left: 0px;
 }
 .bbl{
     
-    border-bottom: 3px solid #12908E;
+    border-bottom: 2px solid #12908E;
     margin-top: -40px;
     width: 180px;
-    margin-left: 730px;
+    margin-left: 560px;
     margin-bottom: 50px;
 }
 #bbl1{
-    border-bottom: 3px solid #12908E;
-    margin-top: -60px;
+    border-bottom: 2px solid #12908E;
+    margin-top: -35px;
     width: 120px;
-    margin-left: 755px;
+    margin-left: 600px;
     margin-bottom: 50px;
 }
 #bbl2{
-    border-bottom: 3px solid #12908E;
+    border-bottom: 2px solid #12908E;
     margin-top: -50px;
     width: 120px;
-    margin-left: 760px;
+    margin-left: 595px;
     margin-bottom: 50px;
 }
 #latb{
-    border-bottom: 3px solid #12908E;
-    margin-top: -50px;
+    border-bottom: 2px solid #12908E;
+    margin-top: -30px;
     width: 180px;
-    margin-left: 700px;
+    margin-left: 565px;
     margin-bottom: 50px;
 }
 
@@ -160,9 +204,14 @@ button:hover{
     border-radius: 10px;
     text-align: center;
     margin-right: 33px;
+    transition: box-shadow 1s;
+    transition-duration: 1s;
 }
 .midd{
     margin-left: 112px;
+}
+.midd1{
+    margin-left: 0px;
 }
 .web{
     font-size: 19.2px;
@@ -174,10 +223,10 @@ button:hover{
 
 .bb{
     
-    border-bottom: 3px solid #12908E;
+    border-bottom: 2px solid #12908E;
     margin-top: -50px;
     width: 100px;
-    margin-left: 175px;
+    margin-left: 130px;
     margin-bottom: 50px;
 }
 .midiv:hover{
@@ -191,7 +240,7 @@ button:hover{
     height: 850px;
     font-size: 30px;
     background-color: rgb(247, 238, 232);
-    /* padding: 80px 25px; */
+    
     
 }
 #recent{
@@ -202,7 +251,7 @@ button:hover{
     
 }
 .breeze{
-    margin-left: -500px; 
+    margin-left: -400px; 
     
 }
 .breeze img{
@@ -226,7 +275,7 @@ button:hover{
     
 }
 .event{
-    margin-left: -520px; 
+    margin-left: -420px; 
     margin-top: 340px;
 }
 .event img{
@@ -238,7 +287,7 @@ button:hover{
 
 .game{
     margin-top: -268px;
-    margin-left: 550px;
+    margin-left: 450px;
 
 
 }
@@ -247,48 +296,32 @@ button:hover{
     height: 260px;
     border-radius: 16px;
 }
-/* .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #12908E;
-}
-   */
-
 .skills{
     max-width: 100%;
     margin: 10px;
     text-align: center;
-    height: 740px;
+    height: 640px;
     font-size: 30px;
     background-color: rgb(247, 247, 247);
-    /* padding: 80px 25px; */
     
 }
 .frontdiv{
     float: left;
-    margin-left: 12%;
-
+    margin-left: 4%;
 }
 .backdiv{
     float: right;
-    margin-right: 450px;
+    margin-right: 300px;
 }
 #front{
-    font-size: 27.2px;
+    font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     margin-left: -200px;
     
 }
 #back{
-    font-size: 27.2px;
+    font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     margin-left: -190px;
@@ -296,82 +329,83 @@ button:hover{
 }
 .fr{
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #frr{
     margin-left: -38px;
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .peachdiv{
     border: 1px solid  rgb(247, 238, 232);
-    width: 180%;
+    width: 160%;
     background-color:  rgb(247, 238, 232);
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -40px;
     
 }
 .rangediv{
     border: 1px solid #c4421a;
-    width: 140%;
+    width: 120%;
     background-color: #c4421a;
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -20px;
     
 }
 .peachdiv2{
     border: 1px solid  rgb(247, 238, 232);
-    width: 180%;
+    width: 160%;
     background-color:  rgb(247, 238, 232);
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -40px;
     
 }
 .rangediv2{
     border: 1px solid #c4421a;
-    width: 130%;
+    width: 110%;
     background-color: #c4421a;
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -20px;
     
 }
 .peachdiv3{
     border: 1px solid  rgb(247, 238, 232);
-    width: 180%;
+    width: 160%;
     background-color:  rgb(247, 238, 232);
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -40px;
     
 }
 .rangediv3{
     border: 1px solid #c4421a;
-    width: 120%;
+    width: 100%;
     background-color: #c4421a;
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -20px;
     
 }
 .peachdiv4{
     border: 1px solid  rgb(247, 238, 232);
-    width: 180%;
+    width: 160%;
     background-color:  rgb(247, 238, 232);
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -40px;
     
 }
 .rangediv4{
     border: 1px solid #c4421a;
-    width: 110%;
+    width: 90%;
     background-color: #c4421a;
     border-radius: 15px;
-    height: 18px;
+    height: 15px;
     margin-top: -20px;
     
 }
@@ -385,46 +419,55 @@ button:hover{
 .latest{
     max-width: 100%;
     margin: 10px;
-    /* text-align: center; */
     height: 800px;
     font-size: 30px;
     background-color: rgb(247, 238, 232);
 
     
 }
+#la{
+    margin-top: 40px;
+}
 .lat{
-    width: 90%;
+    width: 100%;
 }
 .lat div{
-    width: 29%;
+    width: 26%;
     border: 1px solid rgb(247, 247, 247);
     border-radius: 20px;
     float: left;
-    height: 500px;
+    height: 450px;
     padding-left: 20px;
     background-color: rgb(247, 247, 247);
-     
+    transition: box-shadow;
+    transition-duration: 2s;
+
 } 
 .lat div:hover{
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .dd{
-    margin-left: 95px;
+    margin-left: 70px;
 }
 .pp1{
-    margin-left: 13px;
+    margin-left: 32px;
 }
 .pp2{
-    margin-left: 13px;
+    margin-left: 32px;
 } 
 .lat div img{
-    width: 449px;
+    width: 360px;
     margin-left: -20px;
-    height: 300px;
+    height: 250px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    transition: width 1s;
+    transition-duration: 1s;
 
 } 
+.lat div img:hover{
+    width: 370px;
+}
 .diff{
     font-size: 20.8px;
     color: #111111;
@@ -451,11 +494,621 @@ footer p{
 }
 .fid{
     margin-top: 0px;
-
 }
 .fid a{
     color: #f7f7f7;
+    transition: color;
+    transition-duration: 1s;
 }
-/* scrollbar-thumb {
-    background: rgb(196, 66, 26);
-} */
+.fid a:hover{
+    color: #c4421a;
+}
+
+@media only screen and (max-width: 1260px) {
+    #Iam{
+        margin-left: -0px;
+    }
+    #freelance{
+        margin-left: -340px;
+    }
+    button{
+        margin-left: -300px;
+    }
+    .midd{
+        margin-left: 82px;
+    }
+    .bb{
+        margin-left: 115px;
+    }
+    #bbl1{
+        margin-left: 545px;
+    }
+    .bbl{
+        margin-left: 500px;
+    }
+    #bbl2{
+        margin-left: 545px;
+    }
+    .lat div img{
+        width: 335px;
+    }
+    #latb{
+        margin-left: 505px;
+    }
+}
+@media only screen and (max-width: 1240px) {
+    .breeze{
+        margin-left: -350px;   
+    }
+    .breeze img{
+        width: 48%;
+    }
+    
+    .clock{
+        margin-top: -270px;
+    }
+    .clock img{
+        width: 28%;
+    }
+    .event{
+        margin-left: -370px; 
+        margin-top: 320px;
+    }
+    .event img{
+        width: 23%;
+        height: 282px;
+    }
+    
+    .game{
+        margin-top: -288px;
+        margin-left: 400px;
+    }
+    .game img{
+        width: 46%;
+        height: 280px;
+    }
+    
+    .peachdiv{
+        width: 140%;
+        height: 15px;
+    
+    }
+    .rangediv{
+        width: 100%;
+        height: 15px;
+    }
+   .peachdiv2{
+        width: 140%;
+        height: 15px;
+    }
+   .rangediv2{
+        width: 90%;
+        height: 15px;
+    }
+   .peachdiv3{
+        width: 140%;
+        height: 15px;
+    }
+   .rangediv3{
+        width: 80%;
+        height: 15px;
+    }
+    .peachdiv4{
+        width: 140%;
+        height: 15px;
+    }
+   .rangediv4{
+        width: 70%;
+        height: 15px;
+    }
+    .lat div img{
+        width: 330px;
+    }
+}
+@media only screen and (max-width: 1220px) {
+    #bbl1{
+        margin-left: 525px;
+    }
+    #bbl2{
+        margin-left: 525px;
+    }
+    .lat div img{
+        width: 324px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .lat div img{
+        width: 319px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #bbl1{
+        margin-left: 465px;
+    }
+    .services{
+        height: 765px;
+    }
+    .midiv{
+        width: 35%;
+        height: 250px;
+    }
+    .midd{
+        margin-left: 135px;
+    }
+    #midd2{
+        margin-left: 135px;
+        margin-top: 50px;
+    }
+    .bbl{
+        margin-left: 430px;
+    }
+    #bbl2{
+        margin-left: 470px;
+    }
+    .backdiv{
+        margin-right: 150px;
+    }
+    #latb{
+        margin-left: 435px;
+    }
+    .pp2{
+        margin-left: 350px;
+        margin-top: 30px;
+    } 
+    .lat div{
+        width: 30%;
+    }
+    .lat div img{
+        width: 333px;
+    }
+    .dd{
+        margin-left: 15%;
+    }
+    .latest{
+         height: 1150px;
+    }
+    #bbl1{
+        margin-left: 405px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    nav span{
+        margin-left: 100px;
+    }
+    #Iam{
+        margin-left: 70px;
+    }
+    #freelance{
+        margin-left: -335px; 
+    }
+    button{
+        margin-right: -400px;
+    }
+    .intro img{
+        margin-left: 600px;
+    }
+    .bbl{
+        margin-left: 380px;
+    }
+    .breeze{
+        margin-left: -250px;   
+    }
+    .breeze img{
+        width: 45%;
+    }
+    .clock{
+        margin-top: -270px;
+    }
+    .clock img{
+        width: 28%;
+    }
+    .event{
+        margin-left: -250px; 
+        margin-top: 320px;
+    }
+    .event img{
+        width: 20%;
+        height: 282px;
+    }
+    
+    .game{
+        margin-top: -288px;
+        margin-left: 320px;
+    }
+    .game img{
+        width: 40%;
+        height: 280px;
+    }
+    .peachdiv{
+        width: 120%;
+        height: 12px;
+    
+    }
+    .rangediv{
+        width: 90%;
+        height: 12px;
+        margin-top: -15px;
+    }
+   .peachdiv2{
+        width: 120%;
+        height: 12px;
+    }
+   .rangediv2{
+        width: 80%;
+        height: 12px;
+        margin-top: -15px;
+    }
+   .peachdiv3{
+        width: 120%;
+        height: 12px;
+    }
+   .rangediv3{
+        width: 70%;
+        height: 12px;
+        margin-top: -15px;
+    }
+    .peachdiv4{
+        width: 120%;
+        height: 12px;
+    }
+   .rangediv4{
+        width: 60%;
+        height: 12px;
+        margin-top: -15px;
+    }
+    #bbl2{
+        margin-left: 410px;
+    }
+    #midd2{
+        margin-left: 320px;
+    }
+    #latb{
+        margin-left: 380px;
+    }
+    .lat div{
+        width: 92%;
+        height: 400px;
+    }
+    .dd{
+        margin-left: 20px;
+    }
+    .pp1{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .pp2{
+        margin-left: 20px;
+    } 
+    .lat div img{
+        width: 102.8%;
+        object-fit: cover;
+    }
+    .lat div img:hover{
+        width: 103.5%;
+    }
+    .latest{
+        height: 1500px;
+   }
+
+}
+@media only screen and (max-width: 1000px) {
+    #Iam{
+        margin-left: 80px;
+    }
+    button{
+        margin-right: -580px;
+    }
+    #ulp{
+        padding-left: 10px;
+    }
+    ul a{
+        padding-right: 25px;
+    }
+    #jhon{
+        height: 380px;
+    }
+    .intro img{
+        margin-top: 220px;
+        margin-left: 780px;
+        margin-right: -50px;
+        width: 300px;
+    }
+    #bbl1{
+        margin-left: 325px;
+    }
+    .midiv{
+        width: 40%;
+        height: 250px;
+    }
+    .midd{
+        margin-left: 50px;
+    }
+    #midd2{
+        margin-left: 220px;
+        margin-top: 50px;
+    }
+    .bbl{
+        margin-left: 300px;
+    }
+    .breeze{
+        margin-left: -350px;   
+    }
+    .breeze img{
+        width: 28%;
+        height: 262px;
+    }
+    .clock{
+        margin-left: 40px;
+    }
+    .clock img{
+        width: 47%;
+        height: 260px;
+
+    }
+    .event{
+        margin-left: -350px; 
+    }
+    .event img{
+        width: 28%;
+        height: 260px;
+    }
+    
+    .game{
+        margin-left: 330px;
+        margin-top: -270px;
+    }
+    .game img{
+        width: 73%;
+        height: 260px;
+    }
+    #bbl2{
+        margin-left: 320px;
+    }
+    .peachdiv{
+        width: 100%;
+        height: 10px;
+    
+    }
+    .rangediv{
+        width: 90%;
+        height: 10px;
+        margin-top: -13px;
+    }
+   .peachdiv2{
+        width: 100%;
+        height: 10px;
+    }
+   .rangediv2{
+        width: 80%;
+        height: 10px;
+        margin-top: -13px;
+    }
+   .peachdiv3{
+        width: 100%;
+        height: 10px;
+    }
+   .rangediv3{
+        width: 70%;
+        height: 10px;
+        margin-top: -13px;
+    }
+    .peachdiv4{
+        width: 100%;
+        height: 10px;
+    }
+   .rangediv4{
+        width: 60%;
+        height: 10px;
+        margin-top: -13px;
+    }
+    .backdiv{
+        margin-right: 30px;
+    }
+    #latb{
+        margin-left: 300px;
+    }
+}
+  @media only screen and (max-width: 768px) {
+    #bbl1{
+        margin-left: 225px;
+    }
+    .midiv{
+        width: 70%;
+        height: 250px;
+    }
+    .midd{
+        margin-left: 80px;
+    }
+    #midd2{
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    .midd1{
+        margin-top: 50px;
+        margin-left: 80px;
+    }
+    .bb{
+        margin-left: 150px;
+    }
+    .services{
+        height: 1200px;
+    }
+    .bbl{
+        margin-left: 190px;
+    }
+    .breeze{
+        margin-right: -350px;
+    }
+    .breeze img{
+        width: 500px;
+        height: 262px;
+    }
+    .clock{
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .clock img{
+        width: 500px;
+        height: 260px;
+    }
+    .event{
+        margin-left: 15px; 
+    }
+    .event img{
+        width: 500px;
+        height: 260px;
+    }
+    
+    .game{
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    .game img{
+        width: 500px;
+        height: 260px;
+    }
+    .recentworks{
+        height: 1400px;
+    }
+    .skills{
+        height: 850px;
+    }
+    #bbl2{
+        margin-left: 220px;
+    }
+    .frontdiv{
+        float: left;
+        margin-left: 120px;
+    }
+    .backdiv{
+        float: right;
+        margin-right: 150px;
+        margin-top: 30px;
+    }
+    #front{
+        margin-left: 25px;
+    }
+    #back{
+        margin-left: 24px;
+    }
+    #latb{
+        margin-left: 180px;
+    }
+    #Iam{
+        margin-left: 0px;
+    }
+    button{
+        margin-right: -680px;
+    }
+    #jhon{
+        height: 280px;
+    }
+    .intro img{
+        margin-top: 320px;
+        margin-left: 750px;
+        width: 220px;
+    }
+    #hr{ 
+        margin-left: -260px;
+    }
+    nav span{
+        display: none;
+    }
+    .bars{
+        visibility: visible;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    #Iam{
+        margin-left: 40px;
+        margin-top: 400px;
+    }
+    button{
+        margin-right: -780px;
+        margin-top: 500px;
+    }
+    .intro img{
+        margin-top: 100px;
+        margin-left: 700px;
+        width: 220px;
+    }
+    #hr{ 
+        padding-top: 570px; 
+        margin-left: -260px;
+    }
+    #bbl1{
+        margin-left: 160px;
+    }
+    .bb{
+        margin-left: 110px;
+    }
+    .bbl{
+        margin-left: 135px;
+    }
+    .breeze{
+        margin-right: -350px;
+    }
+    .breeze img{
+        width: 400px;
+        height: 262px;
+    }
+    .clock{
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .clock img{
+        width: 400px;
+        height: 260px;
+    }
+    .event{
+        margin-left: 15px; 
+    }
+    .event img{
+        width: 400px;
+        height: 260px;
+    }
+    
+    .game{
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    .game img{
+        width: 400px;
+        height: 260px;
+    }
+    #bbl2{
+        margin-left: 160px;
+    }
+    .frontdiv{
+        float: left;
+        margin-left: 70px;
+    }
+    .backdiv{
+        float: right;
+        margin-right: 80px;
+        margin-top: 30px;
+    }
+    #latb{
+        margin-left: 140px;
+    }
+    .lat div{
+        width: 86%;
+        height: 400px;
+    }
+    .lat div img{
+        width: 400px;
+    }
+    #freelance{
+        margin-left: -335px; 
+        margin-top: 460px;
+    }
+    #hr{ 
+        padding-top: 350px; 
+        margin-left: -260px;
+    }
+    .dropdown {
+        margin-left: 350px;
+    }
+}

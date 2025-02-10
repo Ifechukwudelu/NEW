@@ -1,61 +1,49 @@
 body{
     background-color: #ece7e1;
+    color: #1a1818;
 }
-
-.diva{
+.divc{
+   float: left;
    position: relative;
-   text-align: left;
-   left: 10%;
+   top: 400px;
+   
 }
-.divb{
-    
-    position: absolute;
-    left: 1060px;
-    top: 40px;
+.divd{
+   float: right;
+   position: relative;
+   left: 80px;
+   top: 100px;
 
 }
-#pa{
-    font-size: 7.98vw;
+.divcd{
+   position: relative;
+   
+}
+h3{
+    position: relative;
     font-family: "Grandslang roman", sans-serif;
-    
-    
+    font-weight: lighter;
 }
-#p1{
-    font-size: 2.7vw;
-    font-family: cursive;
-    
-}
-.divb img{
-    max-width: 430px;  
-    max-height: 550px;
-    margin: 27.7188px -55.4375px 0px 0px;
-    
-}
-.diva p{
-    font-size: 1.1vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.8;
-}
-#quote{
-    font-size: 2.7vw;
-    font-family: cursive;
-}
-#reducefont{
-    font-size: 1.6vw;
-    font-family: cursive;
+.if{
+    position: relative;
+    font-size: 1.2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 p a{
-    font-size: 1.2vw;
+    position: relative;
+    font-size: 8vw;
     font-family: cursive;
-    border-radius: 40px;
-    background-color: #1a1818;
-    color: #ece7e1;
-    padding: 20px 60px;
     text-decoration: none;
-
+    color: #1a1818;
+    transition: margin 1s;
+    transition-duration: 1s;
 }
+
+
 p a:hover{
-    padding: 20px 100px;
+    font-style: italic;
+    margin: 0px 20px;
 
 }
 span a{
@@ -63,23 +51,66 @@ span a{
     transform: rotate(270deg); 
     letter-spacing: 4px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2vw;
     color: #1a1818;
     text-decoration: none;
+    transition: transform 1s;
 }
 span a:hover{
     text-decoration: line-through;
+    transform: translate(50px,50px)
+}
+nav-left{
+    top: 70px;
+    position: relative;
 }
 
-nav-left{
-    position: relative; 
-    top: 100px;
-}
-@media screen and (max-width: 900px) {
-    .divb{float: left; width: 100%;}
-    .diva{float: left; width: 100%;}
-    
-    
+  @media only screen and (max-width: 900px) {
+    .if{
+        font-size: 1.6vw;
+    }
+    .divc{
+        float: left;
+        position: relative;
+        top: 0px;
+     }
+     .divd{
+        float: left;
+        position: relative;
+        left: -300px;
+        top: 150px;
+     }
+     .divcd{
+        top: 200px;
+     }
   }
-  div p #reducefont2{
-    box-shadow: 10px 20px gray;
+  @media only screen and (max-width: 600px) {
+    span a{
+        display: inline-block; 
+        transform: rotate(360deg); 
+        letter-spacing: 4px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.4vw;
+        color: #1a1818;
+        text-decoration: none;
+        transition: transform 1s;
+        left: 20px;
+    }
+    .if{
+        font-size: 2vw;
+    }
+    .divc{
+        float: left;
+        position: relative;
+        top: 0px;
+     }
+     .divd{
+        float: left;
+        position: relative;
+        left: 0px;
+        top: 40px;
+     }
+     .divcd{
+        top: 200px;
+     }
   }

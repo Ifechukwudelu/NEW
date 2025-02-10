@@ -16,6 +16,11 @@ h1 {
     
     font-size: 10vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: padding 1s;
+    transition-duration: 1s;
+}
+h1:hover{
+    padding-left: 100px;
 
 }
 div{
@@ -26,9 +31,11 @@ div{
 a{
     color: #ece7e1;
     text-decoration: underline;
+    
 }
 a:hover{
     text-decoration: line-through;
+
 }
 span a{
     display: inline-block; 
@@ -38,19 +45,42 @@ span a{
     color: #ece7e1;
     text-decoration: none;
     font-size: 0.9vw;
+    transition: transform 1s;
     
 }
 span a:hover{
     text-decoration: line-through;
+    transform: translate(50px,50px)
 }
 nav-left{
     position: relative; 
     top: 60px;
     left: 25px;
 }
-@media screen and (orientation: portrait) {
-
-    h1{ font-size: 114px;}
-    p,span a{font-size: 15px;}
-    div{left: 80px;}
- }
+@media only screen and (max-width: 900px) {
+    div{
+        top: 120px;
+        left: 90px;
+}
+p{
+    font-size: 1.4vw;
+}
+}
+  @media only screen and (max-width: 600px) {
+    div{
+        top: 140px;
+        left: 90px;
+}
+p{
+    font-size: 1.8vw;
+}
+span a{
+    font-size: 1.2vw;
+    transform: rotate(360deg); 
+}
+nav-left{
+    position: relative; 
+    top: 30px;
+    left: 25px;
+}
+}

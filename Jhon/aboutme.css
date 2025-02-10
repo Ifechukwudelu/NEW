@@ -13,12 +13,12 @@ body{
     font-weight: 600;
     padding-left: 42px;
     margin-top: 18px;
-    text-shadow: 2px 2px 30px lightgray, 0 0 5px #444446;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.19), 0 0 5px rgba(0, 0, 0, 0.19);
 
 }
 ul a{
     font-size: 17px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #222222;
     
     text-decoration: none;
@@ -26,9 +26,49 @@ ul a{
     
 }
 nav span{
-    
-    margin-left: 600px;
+    margin-left: 220px;
 }
+.bars{
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+}
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: -70px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    margin-left: -50px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
 
 nav{
     position: fixed;
@@ -40,37 +80,42 @@ nav{
 .serve{
     font-size: 48px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 150px;
-    padding-left: 720px;
+    padding-top: 120px;
     color: #000000;
     text-shadow:  3px 3px 0 lightgray;
+    text-align: center;
 
 }
 .bb{
     
-    border-bottom: 4px solid #12908E;
+    border-bottom: 2px solid #12908E;
     margin-top: -40px;
     width: 120px;
-    margin-left: 755px;
-    margin-bottom: 50px;
+    margin-left: 605px;
+    margin-bottom: 60px;
 }
 
 img{
     margin-left: 150px;
     margin-top: -10px;
+    transition: transform;
+    transition-duration: 2s;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19), 0 0 5px rgba(0, 0, 0, 0.19);
     
 }
+img:hover{
+   transform: scale(1.1,1.1);
+}
 #jhon{
-    height: 500px;
+    height: 400px;
 }
 .freec{
-    font-size: 20.8px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 400px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 .flr{
-    margin-left: 400px;
+    margin-left: 680px;
 }
 .frr{
     float: left;
@@ -79,7 +124,7 @@ footer{
     background-color: rgb(34, 34, 34);
     max-width: 98.5%;
     height: 200px;
-    margin-top: 210px;
+    margin-top: 140px;
     text-align: center;
 }
 footer p{
@@ -89,9 +134,99 @@ footer p{
 }
 .fid{
     margin-top: 40px;
-
 }
 .fid a{
     color: #f7f7f7;
+    transition: color;
+    transition-duration: 1s;
+}
+.fid a:hover{
+    color: #c4421a;
+}
+
+@media only screen and (max-width: 1260px) {
+    .bb{
+        margin-left: 540px;
+    }
+    .flr{
+        margin-left: 580px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .bb{
+        margin-left: 470px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    nav span{
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .bb{
+        margin-left: 430px;
+    }
+    img{
+        margin-left: 100px;
+    }
+    .freec{
+        font-size: 16px;
+    }
+    #jhon{
+        height: 300px;
+    }
+    .flr{
+        margin-left: 450px;
+    }
+    footer{
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .bb{
+        margin-left: 300px;
+    }
+    .flr{
+        margin-left: 400px;
+    }
+    #ulp{
+        padding-left: 0px;
+    }
+    ul a{
+        padding-right: 25px;
+    }
+}
+  @media only screen and (max-width: 768px) {
+    .bb{
+        margin-left: 220px;
+    }
+    .flr{
+        margin-top: 400px;
+        margin-left: 100px;
+    }
+    img{
+        margin-left: 170px;
+    }
+    nav span{
+        display: none;
+    }
+    .bars{
+        visibility: visible;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bb{
+        margin-left: 170px;
+    }
+    .flr{
+        margin-left: 40px;
+    }
+    img{
+        margin-left: 100px;
+    }
+    .dropdown {
+        margin-left: 350px;
+    }
 }
     

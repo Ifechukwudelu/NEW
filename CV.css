@@ -3,6 +3,10 @@ body{
     font-size: 1vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.divv{
+    position: relative;
+    top: 40px;
+}
 .css{
     display: flex;
 }
@@ -13,6 +17,7 @@ body{
     float: left;
     position: relative;
     left: 120px;
+    text-align: justify;
     
 }
 .cv2{
@@ -20,6 +25,7 @@ body{
     position: relative;
     top: 80px;
     left: -120px;
+    text-align: justify;
     
 }
 h1{
@@ -60,8 +66,30 @@ nav-left{
     top: 450px;
     left: -1000px;
 }
-@media screen and (orientation: portrait) {
+@media only screen and (max-width: 900px) {
+    .cv2{
+        left: -30px;
+        top: 80px;
+    }
+    .divv{
+        position: relative;
+        top: 60px;
+    }
+}
 
-    .cv1{ left: 10px;}
-    
- }
+  @media only screen and (max-width: 600px) {
+    .cv2{
+        left: -0px;
+        top: 70px;
+    }
+    .divv{
+        position: relative;
+        top: 60px;
+    }
+    .cv1{
+        left: 20px;
+    }
+    body{
+        font-size: 1.3vw;
+    }
+  }

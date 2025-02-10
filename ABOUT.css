@@ -1,0 +1,130 @@
+body{
+    background-color: #ece7e1;
+    
+}
+
+.diva{
+   position: relative;
+   text-align: left;
+   left: 6%;
+}
+.divb{
+    
+    position: absolute;
+    left: 800px;
+    top: 40px;
+
+}
+#pa{
+    font-size: 7.98vw;
+    font-family: "Grandslang roman", sans-serif;
+    transition: padding 2s;
+    transition-delay: 0ms;
+    transition-duration: 1s;
+
+    
+}
+#pa:hover{
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+#p1{
+    font-size: 2.7vw;
+    font-family: cursive;
+    
+}
+.divb img{
+    max-width: 430px;  
+    max-height: 550px;
+    transition: transform 1s;
+    transition-duration: 2s;
+    position: fixed;
+}
+.divb img:hover{
+    transform: scale(1.1,1.1);
+}
+.diva p{
+    font-size: 1.1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.8;
+}
+#quote{
+    font-size: 2.7vw;
+    font-family: cursive;
+}
+#reducefont{
+    font-size: 1.6vw;
+    font-family: cursive;
+}
+
+p a{
+    font-size: 1.2vw;
+    font-family: cursive;
+    border-radius: 40px;
+    background-color: #1a1818;
+    color: #ece7e1;
+    padding: 20px 60px;
+    text-decoration: none;
+    transition: padding 1s;
+    transition-duration: 1s;
+
+}
+p a:hover{
+    padding: 20px 100px;
+
+
+}
+span a{
+    display: inline-block; 
+    transform: rotate(270deg); 
+    letter-spacing: 4px; 
+    font-size: 0.8vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1a1818;
+    text-decoration: none;
+    transition: transform 1s;
+}
+span a:hover{
+    text-decoration: line-through;
+    transform: translate(50px,50px)
+}
+
+nav-left{
+    position: relative; 
+    top: 20px;
+}
+  div p #reducefont2{
+    box-shadow: 10px 20px gray;
+  }
+  @media only screen and (max-width: 900px) {
+    .divb img{
+        max-width: 170px;  
+        max-height: 290px;
+  }
+  .divb{
+    position: absolute;
+    left: 435px;
+    top: 80px;
+
+}
+}
+  @media only screen and (max-width: 600px) {
+    .diva p{
+        font-size: 1.6vw; 
+}
+    .divb img{
+    max-width: 100px;  
+    max-height: 220px;
+    position: relative;
+}
+    .divb{
+    position: absolute;
+    left: 280px;
+    top: 40px;
+
+}
+span a{
+    font-size: 1.2vw;
+}
+}

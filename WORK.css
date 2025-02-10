@@ -10,14 +10,12 @@ div{
     position: relative;
 }
 .diva{
-    /* flex-direction: row; */
     position: relative;
     float: left;
     top: 350px;
     left: 50px;
 }
 .divb{
-    /* flex-direction: row; */
     position: relative;
     float: right;
     top: 180px;
@@ -29,11 +27,18 @@ a{
     font-family: cursive;
     text-decoration: none;
     color: #ece7e1;
+    transition: transform 1s;
+    transition-duration: 1s;
+}
+a:hover{
+    
+    transform: translate(10px,10px)
+    
 }
 h1{
     position: relative;
     bottom: 90px;
-    left: 90px;
+    left: 50px;
 }
 p{
     line-height: 2.0;
@@ -57,10 +62,75 @@ span a{
 span a:hover{
     text-decoration: line-through;
     font-style: normal;
+    transform: none;
 }
 nav-left{
     position: relative; 
     top: 80px;
     left: 10px;
 }
-
+@media only screen and (max-width: 900px) {
+    p{
+        font-size: 1.5vw;
+    }
+    a{
+        font-size: 6vw;
+        padding-top: -100px;
+    }
+    h1{
+        font-size: 3vw;
+    }
+    #tw{
+        top: 120px;
+    }
+    .diva{
+        position: relative;
+        float: left;
+        top: 150px;
+        left: 50px;
+    }
+    .divb{
+        position: relative;
+        top: 320px;
+        left: -180px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    span a{
+        display: inline-block; 
+        transform: rotate(360deg); 
+        letter-spacing: 4px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.4vw;
+        color: #ece7e1;
+        text-decoration: none;
+        transition: transform 1s;
+        left: 20px;
+    }
+    p{
+        font-size: 2.0vw;
+        line-height: 1.5;
+    }
+    a{
+        font-size: 6vw;
+        padding-top: -100px;
+    }
+    h1{
+        position: relative;
+        font-size: 3vw;
+    }
+    #tw{
+        top: 100px;
+    }
+    .diva{
+        position: relative;
+        float: left;
+        top: 250px;
+        left: 40px;
+    }
+    .divb{
+        position: relative;
+        top: 450px;
+        left: -220px;
+    }
+  }
